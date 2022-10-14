@@ -1,0 +1,324 @@
+body, ul, li, h1, h2, a, p{
+    margin:0;
+    padding:0;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*Header*/
+
+header{
+    background-color: #104a8e;
+    padding:15px;
+    text-align: center;
+    border-top:5px solid black;
+    border-bottom: 1px solid black;
+    max-width: 100%;
+    
+}
+
+
+header h1{
+    color:white;
+    border: 8px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    font-family: serif;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+/*Nav bar*/
+
+.main-nav{
+    background-color: #104a8e; 
+    padding:20px;
+    position:sticky;
+    top: 0;
+    text-align: center;
+    border-bottom: 5px solid black;
+    z-index: 1;
+}
+
+
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+nav li{
+    width:25%;
+    display: inline-block;
+    font-size: 24px;
+
+}
+
+
+nav li a{
+    color:white;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 10px;
+    border-width: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+/*front page background*/
+
+section img{
+    width: 100%;
+    border-bottom:5px solid black;
+}
+
+/*text with name, age and birtday*/
+
+.welcome{
+    position: absolute;
+    color: white;
+    padding: 40px;
+    background-color: #104a8e;
+    top: 50%;
+    left: 60%; 
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+
+.welcome h2{
+    font-size: 50px;
+}
+
+/*image carousel in mål page*/
+
+.carousel img{
+    border: 3px solid black;
+    border-radius: 5px;
+
+
+}
+
+
+.carousel-item active{
+    background-color: white;
+}
+
+.carousel-inner img{
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #104a8e;
+    font-size: 20px;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+
+
+footer a{
+    color: white;
+}
+
+/*content of pages*/
+
+
+.innhold h2{
+    padding:30px;
+    padding-bottom: -50px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+
+.innhold p{
+    position: relative;
+    max-width: 800px;
+    top: -20px;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 30px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    margin-top: 20px; 
+    
+}
+
+
+.innhold-mål{
+
+    position: relative;
+    top: -20px;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 30px;
+    padding-top: -5px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 20px;
+}
+
+.text-mål{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.innhold video{
+    position: relative;
+    margin-top: 200px;
+    width: 200px;
+    margin-bottom: -200px;
+    margin-left: 20px;
+}
+
+.innhold img{
+    position: relative;
+    width: 550px;
+    max-width: 100%;
+    top:-400px;
+    left:800px;
+    border: 3px solid black;
+    margin-bottom: -275px;
+    margin-top: -30px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.innhold video{
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    top:-550px;
+    left:800px;
+    border: 3px solid black;
+    margin-bottom: -250px;
+    border-radius: 10px;
+}
+
+
+.bilder{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+
+.bilder li{
+    display: inline-flex;
+    width: 40%;
+    margin: -100px 20px;
+}
+
+
+.bilder li img{
+    max-width: 100%;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+/*backhround color on selected page*/
+
+.on{
+    background-color: darkblue;
+}
+
+/*psuedo classes*/
+
+
+form input:focus{
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+form input:valid{
+    border: 4px solid #71d300;
+}
+
+.main-nav a:hover{
+    position: relative;
+    top:-4px;
+    color: white;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 700px){
+
+    .welcome{
+        top:35%;
+    }
+
+    .welcome h2{
+        font-size: 24px;
+    }
+    .welcome h2 span{
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .welcome h2{
+        font-size: 18px;
+    }
+    .welcome h2 span{
+        font-size: 18px;
+    }
+    .welcome{
+        top:25%;
+        padding: 38px;
+        left:30%;
+    }
+
+    .main-nav li{
+        font-size: 15px;
+    }
+    .innhold p{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 1200px){
+    .innhold img{
+        position:static;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bilder{
+        margin-top: 400px;
+    }
+    .innhold p{
+        text-align: center;
+    }
+    .innhold h2{
+        text-align: center;
+    }
+    .innhold video{
+        position: static;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+    
